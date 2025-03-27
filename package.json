@@ -1,0 +1,14 @@
+{
+  "name": "olbricks",
+  "version": "1.0.0",
+  "type": "module"
+  "description": "Minimalist LEGO parts store",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/bricklink.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "oauth-1.0a": "^2.2.6"
+  }
+}

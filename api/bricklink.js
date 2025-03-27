@@ -21,7 +21,7 @@ export default async function handler(req, res) {
   });
 
   const requestData = {
-    url: 'https://api.bricklink.com/api/store/v1/items', // Пример запроса
+    url: 'https://api.bricklink.com/api/store/Malmeloon/items', // Пример запроса
     method: 'GET',
   };
 

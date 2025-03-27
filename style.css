@@ -1,0 +1,308 @@
+
+Ниже приведена обновлённая версия сайта на английском языке.
+
+
+
+
+
+
+
+File Structure
+
+olbricks/
+
+├─ index.html
+
+├─ style.css
+
+└─ script.js
+
+Upload all files to your GitHub repository and then deploy via Vercel.
+
+
+
+
+
+
+
+index.html
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <title>OlBricks</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Replace the placeholder logo with your actual logo if available -->
+
+    <img src="https://via.placeholder.com/100x100?text=OlBrick+Logo" alt="OlBricks Logo" class="logo" />
+
+    <h1>OlBricks</h1>
+
+    <p class="tagline">Live, Play, Create</p>
+
+  </header>
+
+
+
+  <nav>
+
+    <a href="#catalog">Catalog</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+
+
+  <main>
+
+    <!-- LEGO Parts Catalog Section -->
+
+    <section id="catalog">
+
+      <h2>LEGO Parts Catalog</h2>
+
+      <div id="itemsContainer">
+
+        <!-- Items from BrickLink API will be loaded here -->
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Contact and Shipping Information Section -->
+
+    <section id="contact">
+
+      <h2>Contact & Shipping</h2>
+
+      <p>Shipping and payment information will be available here.</p>
+
+      <p>Email: <a href="mailto:info@olbricks.com">info@olbricks.com</a></p>
+
+    </section>
+
+  </main>
+
+
+
+  <footer>
+
+    <p>&copy; 2025 OlBricks</p>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+style.css
+
+/* General Styles */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  background-color: #FFD966; /* Light yellowish background, inspired by logo colors */
+
+  color: #000;
+
+}
+
+
+
+/* Header */
+
+header {
+
+  background-color: #fdf2cf; /* Slightly lighter for the header */
+
+  text-align: center;
+
+  padding: 1rem;
+
+}
+
+
+
+header .logo {
+
+  max-width: 100px;
+
+  display: block;
+
+  margin: 0 auto 0.5rem auto;
+
+}
+
+
+
+header h1 {
+
+  font-size: 2rem;
+
+  margin-bottom: 0.25rem;
+
+}
+
+
+
+header .tagline {
+
+  font-size: 1rem;
+
+  color: #333;
+
+}
+
+
+
+/* Navigation */
+
+nav {
+
+  background-color: #efefef;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1rem;
+
+  padding: 0.5rem 0;
+
+}
+
+
+
+nav a {
+
+  text-decoration: none;
+
+  color: #000;
+
+  font-weight: bold;
+
+}
+
+
+
+/* Main Content */
+
+main {
+
+  padding: 1rem;
+
+}
+
+
+
+/* Catalog Section */
+
+#catalog {
+
+  margin-bottom: 2rem;
+
+}
+
+
+
+#catalog h2 {
+
+  margin-bottom: 1rem;
+
+}
+
+
+
+#itemsContainer {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  gap: 1rem;
+
+}
+
+
+
+.item {
+
+  background-color: #fff;
+
+  border: 2px solid #ccc;
+
+  border-radius: 4px;
+
+  padding: 0.5rem;
+
+}
+
+
+
+/* Contact Section */
+
+#contact {
+
+  margin-top: 2rem;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+  background-color: #fdf2cf;
+
+  text-align: center;
+
+  padding: 1rem;
+
+  margin-top: 2rem;
+
+}

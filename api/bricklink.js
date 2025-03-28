@@ -24,8 +24,11 @@ export default async function handler(req, res) {
     // Формируем заголовки для запроса
     const authHeader = `OAuth oauth_consumer_key="${consumerKey}", oauth_token="${token}", oauth_signature_method="HMAC-SHA1", oauth_version="1.0"`;
 
+    // Измененный путь запроса
+    const apiUrl = 'https://api.bricklink.com/api/store/v1/inventory'; // Или другой путь в зависимости от того, что вам нужно
+
     // Запрос к API BrickLink
-    const response = await axios.get('https://api.bricklink.com/api/store/v1/items', {
+    const response = await axios.get(apiUrl, {
       headers: {
         Authorization: authHeader,
       },

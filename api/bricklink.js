@@ -1,5 +1,9 @@
 import OAuth from 'oauth-1.0a';
 import crypto from 'crypto';
+const consumerKey = process.env.BRICKLINK_CONSUMER_KEY;
+const consumerSecret = process.env.BRICKLINK_CONSUMER_SECRET;
+const token = process.env.BRICKLINK_TOKEN;
+const tokenSecret = process.env.BRICKLINK_TOKEN_SECRET;
 
 export default async function handler(req, res) {
   const { BRICKLINK_CONSUMER_KEY, BRICKLINK_CONSUMER_SECRET, BRICKLINK_TOKEN, BRICKLINK_TOKEN_SECRET } = process.env;

@@ -1,6 +1,10 @@
 import axios from 'axios';
 
 export default async function handler(req, res) {
+  
+  import dotenv from 'dotenv';
+  dotenv.config();
+  
   const consumerKey = process.env.BRICKLINK_CONSUMER_KEY;
   const consumerSecret = process.env.BRICKLINK_CONSUMER_SECRET;
   const token = process.env.BRICKLINK_TOKEN;
